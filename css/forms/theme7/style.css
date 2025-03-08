@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+:root{
+  color-scheme: light dark;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background: light-dark(#edf2f4, #0b090a);
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0 auto;
+  cursor: url("../../images/others/cursor.png"), auto!important;
+}
+
+a, i, input, img, h1, button, figure, label{
+  cursor: url("../../images/others/thumb.png"), auto!important;
+}
+
+a{
+  text-decoration: none;
+}
+
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 10px solid #6a040f;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #edf2f4;
+    border: 3px solid #6a040f;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::selection {
+    color: #00b4d8;
+  }  
+
+
+  .head{
+    display: flex;
+    position: relative;
+    background: #6a040f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 4em;
+    min-width: 750px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    width: 100%;
+  }
+  
+  .logo a{
+    font-family: "Carter One", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    background-image: url(../design/city.gif);
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .logo a::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: .5px #4f5d75;
+    color: transparent;
+  }
+
+  .nav .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    transition: all 0.3s;
+  }
+
+  .nav .home a{
+    font-size: 1.7rem;
+    color: aliceblue;
+  }
+
+  .nav .home .arrow:hover{
+  color: #fdc500;
+  }
+
+  .nav .home .user{
+    padding-right: 20px;
+    user-select: none;
+  }
+
+ 
+@media screen and (max-device-width: 480px) and (max-device-height: 980px) {
+
+    .head{
+      min-width: unset;
+    }
+
+    .nav {
+      padding: 5px 20px;
+    }    
+
+}

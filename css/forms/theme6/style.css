@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+:root{
+  color-scheme: light dark;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background: light-dark(#edf2f4, #0b090a);
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0 auto;
+  cursor: url("../../images/others/cursor.png"), auto!important;
+}
+
+a, i, input, img, h1, button, figure, label{
+  cursor: url("../../images/others/thumb.png"), auto!important;
+}
+
+a{
+  text-decoration: none;
+}
+
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 10px solid #6a040f;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #edf2f4;
+    border: 3px solid #6a040f;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::selection {
+    color: #00b4d8;
+  }  
+
+
+  .head{
+    display: flex;
+    position: relative;
+    background: #6a040f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 4em;
+    min-width: 750px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    width: 100%;
+  }
+  
+  .logo a{
+    font-family: "Carter One", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    background-image: url(../design/city.gif);
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .logo a::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: .5px #4f5d75;
+    color: transparent;
+  }
+
+  .nav .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    transition: all 0.3s;
+  }
+
+  .nav .home a{
+    font-size: 1.7rem;
+    color: aliceblue;
+  }
+
+  .nav .home .arrow:hover{
+  color: #fdc500;
+  }
+
+  .nav .home .user{
+    padding-right: 20px;
+    user-select: none;
+  }
+
+  .pages {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+ display: block;
+ width: 100%;
+}
+
+  .bg{
+    display: grid;
+    position: relative;
+    place-items: center;
+    padding: 50px;
+    min-height: 70dvh;
+    min-width: 750px;
+    width: 100%;
+  }
+
+  .bg .control{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: light-dark(aliceblue, #001219);
+    border-radius: 20px;
+    box-shadow: light-dark(#b1a7a6, #343a40) 0px 4px 0px -2px, light-dark(#b1a7a6, #343a40) 0px 0px 0px 1px;
+    gap: 20px;
+    padding: 30px;
+    margin: 20px;
+    height: fit-content;
+    max-width: 1600px;
+    width: 90%;
+  }
+
+  .hey {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    height: 500px;
+    width: 60%;
+  }
+
+  .hey .choose{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: light-dark(#001219, aliceblue);
+    border-radius: 12px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 20px;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .choose h1{
+    padding-bottom: 10px;
+    color: light-dark(aliceblue, #001219);
+    font-family: "Carter One", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .choose .here{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: light-dark(aliceblue, #001219);
+    outline: 2px outset #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .here h2{
+    display: flex;
+    padding: 5px;
+    color: #0b090a;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .hey .urk{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: light-dark(#001219, aliceblue);
+    border-radius: 12px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 31px 20px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .urk .card{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    border-radius: 6px;
+    outline: 2px outset #ccc;
+    transition: all 450ms;
+    height: 200px;
+    width: 100%;
+  }
+
+  .urk .card:hover{
+    outline: 2px inset #ccc;
+    scale: .9;
+  }
+
+  .urk h1{
+    padding-bottom: 10px;
+    color: light-dark(aliceblue, #001219);
+    font-family: "Carter One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .card img{
+    object-fit: fill;
+    filter: drop-shadow(0 0 0.1rem light-dark(aliceblue, #001219));
+    width: 100%;
+  }
+
+  .page{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: light-dark(#001219, aliceblue);
+    border-radius: 12px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 20px;
+    height: 500px;
+    width: 100%;
+  }
+
+  .page h1{
+    padding-bottom: 10px;
+    color: light-dark(aliceblue, #001219);
+    font-family: "Carter One", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .page .method{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: light-dark(aliceblue, #001219);
+    outline: 2px outset #ccc;
+    border-radius: 6px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .method .rel{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .method .rel-1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .input-box{
+    margin-bottom: 15px;
+  }
+
+  .input-box span {
+    display: block;
+    margin-bottom: 10px;
+    color: light-dark(#001219, aliceblue);
+}
+
+.input-box input {
+  background: rgba(255, 255, 255, 0.1);
+  border: unset;
+  padding: 8px 30px  8px 10px;
+  border-radius: 6px;
+  outline: 1px outset light-dark(#c0c0c0, transparent);
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 400;
+  color: light-dark(#001219, aliceblue);
+  height: fit-content;
+  width: 100%;
+}
+
+.input-box input:not(:placeholder-shown):valid {
+    background-image: url(../design/green-check.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: calc(97%);
+    background-position-y: calc(50%);
+    outline: 2px inset forestgreen;
+  }
+  
+.input-box input:not(:placeholder-shown):invalid {
+    background-image: url(../design/red-check.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: calc(97%);
+    background-position-y: calc(50%);
+    outline: 2px inset #9d0208;
+    animation: shake 0.3s ease-in-out 0s 3;
+  }
+  
+  @keyframes shake {
+    0% { margin-left: 0rem; }
+    25% { margin-left: 0.5rem; }
+    75% { margin-left: -0.5rem; }
+    100% { margin-left: 0rem; }
+  }
+  
+  .input-box input::placeholder {
+    color: light-dark(#8a897c, #aaaaaa);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .input-box input:focus {
+    outline: 2px outset #001219;
+  }
+  .input-box input::-ms-reveal {
+    filter: invert(100%);
+  }
+
+  .inputted span{
+    padding-right: 10px;
+  }
+
+  .inputted .ct{
+    color: light-dark(aliceblue, #001219);
+    background: light-dark(#001219, aliceblue);
+  }
+
+  select{
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 8px;
+    border: unset;
+    color: #001219;
+    background: aliceblue;
+    outline: 2px outset #ccc;
+	border-radius: 6px;
+  }
+
+  select:focus{
+    outline: 2px inset #ccc;
+  }
+
+  option{
+  overflow: hidden!important;
+  }
+
+  form .btn {
+    padding: 10px 0;
+    background: light-dark(#001219, aliceblue);
+    border: unset;
+    border-radius: 6px;
+    margin-block: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: light-dark(aliceblue, #001219);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+  }
+  
+  form .btn:active {
+      transform: scale(.9);
+  }
+
+  @media screen and (max-width: 1310px) {
+
+    .bg .control{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hey {
+        height: fit-content;
+        width: 100%;
+      }
+
+      .choose .here{
+        align-items: center;
+        justify-content: center;
+      }
+
+    .hey .urk{
+    display: none;
+   }
+  }
+  
+@media screen and (max-device-width: 480px) and (max-device-height: 980px) {
+
+    .head, .bg{
+      min-width: unset;
+    }
+
+    .nav {
+      padding: 5px 20px;
+    }    
+
+    .bg{
+        padding: 0 15px;
+        padding-block: 50px;
+    }
+
+    .bg .control{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    
+  .control .page{
+    height: fit-content;
+  }
+
+   .choose h1, .urk h1{
+    font-size: 1.1rem;
+  }
+
+  .page h1{
+   font-size: 1.2;
+  }
+
+    .page .method{
+     flex-direction: column;
+     height: fit-content;
+    }
+
+    .method .rel-1{
+      padding: 0px 20px;
+      height: fit-content;
+    }
+
+}
