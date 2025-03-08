@@ -77,14 +77,14 @@ a, i, input, img, h1, button, figure, .dot{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .logo svg{
   height: 35px;
   width: 35px;
   color: aliceblue;
-  fill:#fb8b24;
+  fill: #ffee33;
 }
 
 .logo a{
@@ -439,7 +439,7 @@ span.prev{
 }
 span.next:hover, span.prev:hover{
   opacity: 1;
-  color:  light-dark(#8d0801, #fb8b24);;
+  color: light-dark(#8d0801, #fb8b24);;
   background: transparent;
   animation: unset;
 } 
@@ -463,12 +463,12 @@ span.next:active, span.prev:active{
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.6s ease-in-out;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
 }
 .dotsContainer .active{
   outline: 2px outset #ccc;
-  background-color: #6a040f;
+  background-color: light-dark(#fb8b24, #9d0208);
 }
 
 @keyframes next1{
@@ -731,10 +731,15 @@ span.next:active, span.prev:active{
   fill: light-dark(#fb8b24, #001219);
 }
 
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet{
+  outline: 2px inset #bbb !important;
+  transition: background-color 0.6s ease-in-out;
+}
+
+.swiper-pagination-bullet-active{
   position: relative;
-  outline: 2px outset #ccc;
+  outline: 2px outset #ccc !important;
+  background-color: light-dark(#fb8b24, #9d0208) !important;
 }
 
 .swiper-slide span {
@@ -3378,8 +3383,8 @@ footer{
   }
 
   .iconic a.active svg{
-    color: light-dark(#6a040f, #fb8b24);
-    fill: azure;
+    color: #ccc;
+    fill: light-dark(#6a040f, #fb8b24);
   }
 
   .iconic a{
