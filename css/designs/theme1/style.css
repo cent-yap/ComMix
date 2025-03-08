@@ -148,7 +148,7 @@ a{
 .bg .main-box .con-box{
     display: flex;
     position: relative;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     min-height: fit-content;
@@ -176,7 +176,7 @@ a{
     height: 80px;
     width: 80px;
     color: aliceblue;
-    fill: #fb8b24;
+    fill: #ffee33;
   }
 
   .return{
