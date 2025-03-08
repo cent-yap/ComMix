@@ -140,6 +140,7 @@ a {
 
 .nav .nav-links a:not(.nav-links a.active):hover{
   color: #ffe3e0;
+  font-weight: 700;
 }
 
 .nav .nav-links a::after {
@@ -148,7 +149,6 @@ a {
   left: 0; bottom: -2px; 
   height: 2px;
   width: 100%;
-  background: transparent;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -156,17 +156,17 @@ a {
 
 .nav .nav-links a:not(.nav-links a.active):hover::after {
   transform: scaleX(1);
-  background: #fdc500; 
+  background-color: #fdc500; 
 }
 
 .nav .nav-links a.active {
   color: #fdc500;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .nav .nav-links a.active::after {
   transform: scaleX(1); 
-  background: aliceblue; 
+  background-color: aliceblue; 
 }
 
 .nav .nav-links .hide a{
