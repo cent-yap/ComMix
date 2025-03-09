@@ -515,7 +515,7 @@ a{
   top: 50%;
   height: 25px;
   width: 25px;
-  transform: translateY(-5%);
+  transform: translateY(0%);
   font-size: 1.1rem;
   color: light-dark(#001219, aliceblue);
   fill: light-dark(aliceblue, #001219);
@@ -526,7 +526,7 @@ a{
   position: absolute;
   left: 15px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
   font-size: 1.1rem;
 }
 
