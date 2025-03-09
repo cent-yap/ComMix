@@ -408,7 +408,7 @@ a{
 }
 
 .input-box .sep .two a {
-  font-size: .9rem;
+  font-size: 1rem;
   color: light-dark(#284b63, #bcb8b1);
 }
 
@@ -418,7 +418,7 @@ a{
 
 
 .input-box label{
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 600;
   padding-left: 8px;
   color: light-dark(#001219, #fbfbff);
@@ -539,7 +539,7 @@ a{
   justify-content: space-between;
   width: 100%;
   margin: 10px 0;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .remember-forgot-box label {
@@ -712,12 +712,12 @@ scale: 0.9;
 .social-icons svg{
 height: 25px;
 width: 25px;
+fill: transparent;
 }
 
 .social-icons a:nth-of-type(1) {
 background: aliceblue;
 color: #9d0208;
-fill: #c1121f;
 }
 .social-icons a:nth-of-type(1):hover {
 background: #9d0208;
@@ -726,7 +726,6 @@ color: #f2f2f2;
 .social-icons a:nth-of-type(2) {
 background: aliceblue;
 color: #e1306c;
-fill: #ffb3c1;
 }
 .social-icons a:nth-of-type(2):hover {
 background: #e1306c;
@@ -735,7 +734,6 @@ color: #f2f2f2;
 .social-icons a:nth-of-type(3) {
 background: aliceblue;
 color: #252422;
-fill: #495057;
 }
 .social-icons a:nth-of-type(3):hover {
 background: #252422;
@@ -744,7 +742,6 @@ color: #f2f2f2;
 .social-icons a:nth-of-type(4) {
 background: aliceblue;
 color: #283618;
-fill: #3a5a40;
 }
 .social-icons a:nth-of-type(4):hover {
 background: #283618;
@@ -879,6 +876,10 @@ color: #f2f2f2;
     width: 35px;
   }
 
+  .home .return{
+    fill: transparent
+  }
+
   .nav .home .arrow:hover{
   color: #fdc500;
   }
@@ -934,7 +935,7 @@ color: #f2f2f2;
   }
 
   .input-box .dation{
-    font-size: .9rem;
+    font-size: .930rem;
   }
 
   .social-icons a:hover{
@@ -984,10 +985,10 @@ color: #f2f2f2;
   }
 
   .remember-forgot-box {
-   font-size: .850rem;
+   font-size: .9rem;
   }
   .register a, .register{
-    font-size: .850rem;
+    font-size: .9rem;
   }
 
 }
