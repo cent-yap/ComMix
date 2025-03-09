@@ -3539,6 +3539,11 @@ footer{
 
   .ben .daq{
     padding: 20px 0;
+    width: calc(100% - 200px);
+  }
+
+  .daq .qw{
+    padding: 0 5px;
   }
 
   .swiper-slide span {
@@ -3552,15 +3557,6 @@ footer{
   .jsf p{
    line-height: 20px;
    font-size: .8rem;
-  }
-
-  .ben .daq{
-    width: calc(100% - 200px);
-  }
-
-  .qw svg{
-    height: 30px;
-    width: 30px;
   }
 
   .con .main-outer{
