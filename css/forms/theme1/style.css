@@ -942,6 +942,14 @@ color: #f2f2f2;
     width: calc(100% - 200px);
   }
 
+  .input-box input:not(:placeholder-shown):valid {
+    background-size: 22px;
+  }
+  
+  .input-box input:not(:placeholder-shown):invalid {
+    background-size: 22px;
+  }
+
   .iconic{
     display: flex;
     position: relative;
