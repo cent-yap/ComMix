@@ -3543,7 +3543,8 @@ footer{
   }
 
   .daq .qw{
-    padding: 0 5px;
+    padding: 0;
+    padding-inline-start: 10px;
   }
 
   .swiper-slide span {
