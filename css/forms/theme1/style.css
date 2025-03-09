@@ -408,7 +408,7 @@ a{
 }
 
 .input-box .sep .two a {
-  font-size: 1rem;
+  font-size: .9rem;
   color: light-dark(#284b63, #bcb8b1);
 }
 
@@ -418,7 +418,7 @@ a{
 
 
 .input-box label{
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 600;
   padding-left: 8px;
   color: light-dark(#001219, #fbfbff);
@@ -431,7 +431,7 @@ a{
   border-radius: 20px;
   outline: 1px outset light-dark(#c0c0c0, transparent);
   transition: 0.3s;
-  font-size: 1rem;
+  font-size: .9rem;
   color: light-dark(#001219, #fbfbff);
   font-weight: 400;
   height: fit-content;
@@ -539,7 +539,7 @@ a{
   justify-content: space-between;
   width: 100%;
   margin: 10px 0;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .remember-forgot-box label {
