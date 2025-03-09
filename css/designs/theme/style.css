@@ -2563,6 +2563,7 @@ footer{
   justify-content: space-between;
   background: #000814;
   padding-inline: 20px;
+  font-size: 1rem;
   flex-wrap: wrap; 
   min-height: fit-content;
   min-width: 750px;
@@ -2584,7 +2585,6 @@ footer{
 
  footer .left p{
   color: aliceblue;
-  font-size: 1rem;
   font-weight: 400;
  }
 
@@ -3009,10 +3009,6 @@ footer{
     text-align: start;
     order: 1;
    }
-   footer .left p{
-    font-size: 1rem;
-   }
-
    footer .right{
     order: 2;
   }
@@ -3067,7 +3063,7 @@ footer{
     font-size: 1rem;
   }
  
-  footer .left p{
+  footer{
     font-size: .9rem;
    }
 
