@@ -980,7 +980,7 @@ color: #f2f2f2;
     min-width: unset;
   }
 
-  .input-box svg {
+  .input-box svg, .login-btn svg {
     height: 22px;
     width: 22px;
   }
