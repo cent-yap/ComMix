@@ -3558,6 +3558,11 @@ footer{
     width: calc(100% - 200px);
   }
 
+  .qw svg{
+    height: 30px;
+    width: 30px;
+  }
+
   .con .main-outer{
     padding-block: 0px;
   }
