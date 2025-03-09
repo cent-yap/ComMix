@@ -943,11 +943,11 @@ color: #f2f2f2;
   }
 
   .input-box input:not(:placeholder-shown):valid {
-    background-size: 22px;
+    background-size: 25px;
   }
   
   .input-box input:not(:placeholder-shown):invalid {
-    background-size: 22px;
+    background-size: 25px;
   }
 
   .iconic{
