@@ -169,6 +169,7 @@ a{
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  color: aliceblue;
   padding: 10px 0;
   height: fit-content;
   width: 100%;
@@ -440,7 +441,7 @@ a{
 
 .input-box input:not(:placeholder-shown):valid {
   background-image: url("../../images/others/green-r.png");
-  background-size: 30px;
+  background-size: 27px;
   background-repeat: no-repeat;
   background-position: right 10px center; 
   padding-right: 45px; 
@@ -451,7 +452,7 @@ a{
 
 .input-box input:not(:placeholder-shown):invalid {
   background-image: url("../../images/others/red-x.png");
-  background-size: 30px;
+  background-size: 27px;
   background-repeat: no-repeat;
   background-position: right 10px center; 
   padding-right: 45px; 
