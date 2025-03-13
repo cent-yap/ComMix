@@ -89,12 +89,10 @@ a, i, input, img, h1, button, figure, .dot{
 
 .logo a{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-family: "Carter One", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  position: relative;
+  font: 700 2rem "Carter One", sans-serif;
   background: linear-gradient(to right, #e9edc9, #edddd4, #fefae0);
   background-clip: text;
   -webkit-background-clip: text;
@@ -310,6 +308,7 @@ nav a button:active{
 .back-to-top span:hover {
   transform: translateY(-3px);
 }
+
 .back-to-top span svg{
   height: 30px;
   width: 30px;
@@ -647,9 +646,7 @@ span.next:active, span.prev:active{
 
  .cover h1{
   color: aliceblue;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font: 400 1.5rem "Eksell Display Trial", sans-serif;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
@@ -752,9 +749,7 @@ span.next:active, span.prev:active{
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font: 500 1.2rem "Eksell Display Trial", sans-serif;
   writing-mode: sideways-rl;
   text-transform: uppercase;
   padding: 10px;
@@ -912,9 +907,7 @@ span.next:active, span.prev:active{
 
 .gqm a{
   color: aliceblue;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font: 500 1.7rem "Eksell Display Trial", sans-serif;
 }
 
 .line .jsf{
@@ -951,9 +944,7 @@ span.next:active, span.prev:active{
   align-items: center;
   justify-content: flex-start;
   color: aliceblue;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font: 500 1.3rem "Eksell Display Trial", sans-serif;
   padding: 10px 20px;
   letter-spacing: 2px;
   width: 100%;
@@ -1156,13 +1147,11 @@ span.next:active, span.prev:active{
 }
 
 h1#head {
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: calc(1.1rem + 1.5vw);
-	font-weight: 400;
+  font: 400 calc(1.1rem + 1.5vw) "Eksell Display Trial", sans-serif;
+  position: relative;
   letter-spacing: 2px;
   text-transform: uppercase;
 	margin-top: 10px;
-  position: relative;
   color: light-dark(#6a040f, #fb8b24);
   animation: clip-path-reveal-1 3s ease infinite alternate;
 }
@@ -1324,11 +1313,9 @@ h1#head {
 }
 .slider-item .overlay .destination-desc h3{
 	margin-bottom: 10px;
-  font-family: "Eksell Display Trial", sans-serif;
-	font-size: 1.5rem;
+  font: 600 1.5rem "Eksell Display Trial", sans-serif;
 	color: aliceblue;
 	text-transform: capitalize;
-	font-weight: 600;
 	letter-spacing: 2px;
 }
 
@@ -1612,8 +1599,7 @@ h1#head {
 .new figure .capa h3{
   color: aliceblue;
   position: relative;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 2.1rem;
+  font: 500 2.1rem  "Eksell Display Trial", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 120px;
@@ -1663,9 +1649,7 @@ h1#head {
 .heading__title {
   position: relative;
   color: light-dark(#001219, aliceblue);
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
+  font: 500 2rem "Eksell Display Trial", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -1802,9 +1786,7 @@ h1#head {
   align-self: flex-end;
   color: aliceblue;
   position: relative;
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 400;
+  font: 400 1.7rem "Eksell Display Trial", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -2141,14 +2123,11 @@ h1#head {
 }
 
 .place strong{
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 2.5rem;
+  font: 2.5rem "Eksell Display Trial", sans-serif;
 }
 
 .about .yeah .price{
-  font-family: "Eksell Display Trial", sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
+  font: 600 3rem "Eksell Display Trial", sans-serif;
   letter-spacing: 2px;
 }
 
