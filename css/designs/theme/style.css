@@ -2243,9 +2243,7 @@ h1#head {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../images/others/side.svg");
-  background-position: right;
-  background-size: contain;
+  background: url("../../images/others/side.svg") right / contain;
   transition: 0.8s ease-in-out;
   z-index: -1;
 }
@@ -2268,7 +2266,7 @@ h1#head {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../images/others/center.svg");
+  background: url("../../images/others/center.svg") center / contain;
   background-position: center;
   background-size: contain;
   transition: 0.8s ease-in-out;
@@ -2293,9 +2291,7 @@ h1#head {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../images/others/side.svg");
-  background-position: right;
-  background-size: contain;
+  background: url("../../images/others/side.svg") right / contain;
   transition: 0.8s ease-in-out;
   z-index: -1;
 }
