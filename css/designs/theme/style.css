@@ -1373,6 +1373,7 @@ h1#head {
   position: relative;
   align-items: center;
   justify-content: center;
+  background: blues;
   padding-block: 40px;
   max-width: 1550px;
   width: 100%;
@@ -2957,7 +2958,6 @@ footer{
     animation-range: entry 0 cover 20%;
   }
 
-
   .card-box {
     min-width: 300px;
 }
@@ -2974,9 +2974,22 @@ footer{
    overflow-y: auto;
   }
 
+  .outer-layer{
+    transition: appear 0.3 ease-in-out;
+    animation: appear 0.2s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+    animation-composition: accumulate;
+  }
+
+  .card-box, .new figure{
+    animation: unset;
+  }
+
   .con-table .table{
    justify-content: center;
   }
+
 }
 
 @media screen and (max-device-width: 730px) {
@@ -3002,6 +3015,7 @@ footer{
   .nav:not(.openSearch) .logo {
     display: flex; /* Show the logo when search is closed */
   }
+
 }
 
 /* Responsive for Phones*/
@@ -3110,20 +3124,12 @@ footer{
     padding-block: 20px;
   }
 
-  .card-box, .new figure{
-    animation-range: entry 0 cover 20%;
-  }
-
 }
 
 @media screen and (min-height: 20px) and (max-height: 299px){
 
   .outer-layer .maxy{
     padding-block: 20px;
-  }
-
-  .card-box, .new figure{
-    animation-range: entry 0 cover 20%;
   }
 
 }
