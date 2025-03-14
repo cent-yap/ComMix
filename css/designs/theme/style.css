@@ -1915,11 +1915,8 @@ h1#head {
   display: grid;
   position: relative;
   place-items: center;
-  background-image: url(../design/circle.svg);
-  background-position: center;
-  background-size: cover;
   padding: 50px 20px;
-  min-height: fit-content;
+  height: fit-content;
   min-width: 750px;
   width: 100%;
 }
