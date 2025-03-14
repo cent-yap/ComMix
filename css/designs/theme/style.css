@@ -257,22 +257,6 @@ a {
   display: none;
 }
 
-.btn button {
-  padding: 3px 12px;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  border: unset; outline: unset;
-  cursor: pointer;
-}
-nav a button:hover {
-  color: #d90429;
-  scale: 1.05;
-}
-nav a button:active{
-  scale: 0.9;
-}
-
 .back-to-top {
   display: inline-flex;
   position: fixed;
