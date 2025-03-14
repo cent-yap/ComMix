@@ -1406,6 +1406,7 @@ h1#head {
   animation: appear 0.2s ease-in-out both;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
+  animation-composition: accumulate;
 }
 
 @keyframes appear{
@@ -1585,6 +1586,7 @@ h1#head {
   animation: appear 0.2s ease-in-out both;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
+  animation-composition: accumulate;
 }
 
 .new figure img{
