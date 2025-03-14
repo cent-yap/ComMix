@@ -21,7 +21,7 @@ html, body {
   cursor: url("../../images/others/cursor.png"), auto!important;
 }
 
-a, i, input, img, h1, button, figure, .dot{
+a, i, input, img, h1, button, figure, .dot, label{
   cursor: url("../../images/others/thumb.png"), auto!important;
 }
 
@@ -46,10 +46,9 @@ a, i, input, img, h1, button, figure, .dot{
 }
 
 .head{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding: 0px 25px;
   background: #6a040f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -327,22 +326,18 @@ nav a button:active{
 }
 
 .shown{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../../images/others/abstract.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  place-items: center;
+  background: url("../../images/others/abstract.jpg") center/cover no-repeat;  
   filter: contrast(105%) saturate(105%);
-  min-height: fit-content;
-  min-width: 750px;
-  width: 100%;
   padding-block: 30px;
   padding-inline: 50px;
   overflow: hidden;
-  animation: hays 1s ease-in-out forwards;
+  height: fit-content;
+  min-width: 750px;
+  width: 100%;
+  animation: hays 1s ease-in-out both;
   transition: background-position-y 300ms ease-in-out;
  }
 
@@ -635,10 +630,9 @@ span.next:active, span.prev:active{
 }
 
 .cover{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   background: #6a040f;
   height: fit-content;
   min-width: 750px;
@@ -691,10 +685,9 @@ span.next:active, span.prev:active{
  }
 
  .back{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   overflow: hidden;
   min-height: fit-content;
   min-width: 750px;
@@ -702,10 +695,9 @@ span.next:active, span.prev:active{
 }
 
 .back .main-outside{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding-block: 75px;
   max-width: 1550px;
 }
@@ -1124,21 +1116,20 @@ span.next:active, span.prev:active{
 }
 
 .con{
-	display: flex;
+	display: grid;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 13%;
+  place-items: center;
   height: fit-content;
+  padding: 0 13%;
   min-width: 750px;
   width: 100%;
 }
 
 .con .main-outer{
-  display: flex;
-  flex-direction: column;
+  display: grid;
   position: relative;
   padding-block: 75px;
+  width: 100%;
 }
 
 .con .section-header{
@@ -1198,10 +1189,9 @@ h1#head {
 }
 
 .rev, .ext{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   color: light-dark(#001219, aliceblue);
   font-weight: 600;
   animation: opa 3s ease-in-out infinite both;
@@ -1360,10 +1350,9 @@ h1#head {
 }
 
 .outer-layer{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   min-width: 750px;
   width: 100%;
 }
@@ -1373,7 +1362,6 @@ h1#head {
   position: relative;
   align-items: center;
   justify-content: center;
-  background: blues;
   padding-block: 40px;
   max-width: 1550px;
   width: 100%;
@@ -1388,12 +1376,12 @@ h1#head {
   color: aliceblue;
   padding-inline: 30px;
   padding-block-start: 30px;
+  width: 100%;
 }
 
 .card-box {
-  display: flex;
+  display: grid;
   position: relative;
-  flex-direction: column;
   background: aliceblue;
   border-radius: 12px;
   min-height: 450px;
@@ -1564,10 +1552,9 @@ h1#head {
 }
 
 .new{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding-block: 30px;
   padding-inline-end: 30px;
   transition: all 450ms ease-in-out;
@@ -1583,6 +1570,7 @@ h1#head {
   outline: 1px solid #ccc;
   height: 450px;
   min-width: 400px;
+  width: 100%;
   transition: appear 0.3 ease-in-out;
   animation: appear 0.2s ease-in-out both;
   animation-timeline: view();
@@ -1702,7 +1690,7 @@ h1#head {
   margin: 10px 0px;
   color: light-dark(#6a040f, #fb8b24);
   font-size: 1.1rem;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 /* CARDS */
@@ -1769,6 +1757,7 @@ h1#head {
   position: relative;
   text-decoration: none;
 }
+
 .card__icon{
   align-items: flex-start;
   justify-content: flex-start;
@@ -1949,8 +1938,8 @@ h1#head {
   align-items: center;
   justify-content: space-evenly;
   gap: 30px;
+  flex: 0 0 auto;
   flex-wrap: wrap;
-  flex-shrink: 0;
   padding: 20px 0;
   height: fit-content;
   max-width: 1550px;
@@ -2351,11 +2340,10 @@ h1#head {
 
 
 .well{
- display: flex;
+ display: grid;
  position: relative;
- align-items: center;
- justify-content: center;
- min-height: fit-content;
+ place-items: center;
+ height: fit-content;
  min-width: 750px;
  width: 100%;
 }
@@ -2450,7 +2438,6 @@ h1#head {
 .last{
   display: grid;
   position: relative;
-  flex-direction: column;
   place-items: center;
   padding: 20px 50px;
   background: #6a040f;
@@ -2577,7 +2564,7 @@ footer{
   align-items: center;
   justify-content: space-between;
   background: #000814;
-  padding-inline: 20px;
+  padding: 0 20px;
   font-size: 1rem;
   flex-wrap: wrap; 
   min-height: fit-content;
@@ -2590,10 +2577,19 @@ footer{
   accent-color: light-dark(#6a040f, #dda15e);
  }
 
+ footer .left {
+  display: grid;
+  position: relative;
+  place-items: center start;
+  height: fit-content;
+  width: max-content;
+ }
+
  footer .left label{
   display: flex;
   position: relative;
   color: aliceblue;
+  width: 100%;
   gap: 8px;
   flex: 0;
  }
@@ -2604,10 +2600,9 @@ footer{
  }
 
  footer .right{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   flex: 0;
   gap: 20px;
   padding-top: 10px;
@@ -2651,7 +2646,7 @@ footer{
   }
 
   .con{
-    padding: 0 9%;
+    padding: 0 8%;
   }
  
 }
@@ -2691,7 +2686,7 @@ footer{
 }
 
 .main {
-    width: 90%;
+    width: 80%;
 }
 
 .new figure{
@@ -2741,8 +2736,7 @@ footer{
   }
  
   .new{
-    padding-block: 40px;
-    padding-inline: 40px;
+    padding: 40px;
   }
 
   .new figure{
@@ -3031,7 +3025,6 @@ footer{
     padding-inline: 20px;
    }
    footer .left {
-    text-align: start;
     order: 1;
    }
    footer .right{
@@ -3104,16 +3097,10 @@ footer{
 @media screen and (max-device-width: 385px){
 
    footer{
-    justify-content: center;
-    padding-inline: 20px;
+    padding: 10px;
    }
-   footer .left p{
-    padding-block: 20px;
-   }
-   footer .left input{
-    display: none;
-   }
-   footer .right .forum{
+
+   footer .right{
     display: none;
    }
 }
@@ -3203,9 +3190,7 @@ footer{
   }
 
   .new{
-    padding-block: 40px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+    padding: 40px;
   }
 
 }
@@ -3250,11 +3235,9 @@ footer{
 @media screen and (max-device-width: 700px) and (min-device-height: 800px) {
 
   .main{
-    display: flex;
+    display: grid;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    place-items: center;
     padding: 20px;
   }
 
@@ -3272,7 +3255,7 @@ footer{
   }
   .card-box {
     width: 40dvw;
-  }
+}
 }
 
 @media screen and (max-device-width: 650px)  and (min-device-height: 800px) {
@@ -3377,10 +3360,9 @@ footer{
   }
 
   .ahead{
-    display: flex;
+    display: grid;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     background: light-dark(#edf2f4, #0b090a);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: fit-content;
@@ -3437,7 +3419,7 @@ footer{
   .cover{
     background: transparent;
     padding: 10px 20px;
-    justify-content: left;
+    place-items: center flex-start;
     border-bottom: 1px solid light-dark(#0b090a, #edf2f4);
    }
 
@@ -3462,14 +3444,8 @@ footer{
   }
 
   .shown{
-    background-image: url("../../images/others/paint.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("../../images/others/paint.png") center/cover no-repeat fixed;  
     filter: contrast(105%) saturate(105%);
-    min-height: fit-content;
-    width: 100%;
     padding: 0px;
    }
 
@@ -3479,7 +3455,7 @@ footer{
    }
 
    .slide-container{
-    border-radius: 0px;
+    border-radius: 0;
     height: 350px;
     width: 100%;
    }
