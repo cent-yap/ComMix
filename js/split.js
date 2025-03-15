@@ -25,7 +25,7 @@ $(document).keydown(function (event) {
 document.getElementById('trigger').addEventListener('click', function() {
   var modal = document.getElementById('modal');
   if (modal.style.display === 'none' || modal.style.display === '') {
-      modal.style.display = 'block';
+      modal.style.display = 'grid';
   } else {
       modal.style.display = 'none';
   }
