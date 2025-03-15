@@ -358,7 +358,7 @@ a {
   position: relative;
   border-radius: 12px;
   overflow: hidden!important;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   height: 550px;
   min-width: 750px;
   width: 100%;
@@ -504,7 +504,7 @@ span.next:active, span.prev:active{
   row-gap: 0px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   height: 550px;
   min-width: 350px;
   width: 50%;
@@ -513,18 +513,16 @@ span.next:active, span.prev:active{
 .shown .inside-bx .box-1::before{
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   opacity: 100%;
-  background-position: center;
-  background-size: 100% 100%;
-  filter: contrast(105%) saturate(105%);
+  background: center / 100% 100% no-repeat;
+  filter: contrast(105%) saturate(105%);  
   transition: all opacity 1s ease-in-out;
   -webkit-transition: all opacity 1s ease-in-out;
   animation: change 20s linear infinite both;
   will-change: background-image, opacity, transition;
-  transition: opacity 1s ease-in-out;
   border-image:  fill 0 linear-gradient(light-dark(#0000, #0000), light-dark(#0005, #0005));
 }
 
@@ -540,48 +538,45 @@ span.next:active, span.prev:active{
 }
 
  .shown .inside-bx .box-1 .inner-1{
-  display: flex;
+  display: grid;
   position: relative;
-  flex-direction: column;
-  min-height: fit-content;
-  width: 100%;
+  place-items: center;
   border-radius: 5px;
+  height: fit-content;
+  width: 100%;
  }
 
  .shown .inside-bx .box-1 .inner-1 .learn{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  min-height: fit-content;
-  width: 100%;
+  place-items: center;
   border-radius: 5px 5px 0 0;
+  height: fit-content;
+  width: 100%;
  }
 
  .shown .inside-bx .box-1 .inner-1 .learn .greet{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
+  border-radius: 5px 5px 0 0;
   min-height: 340px;
   width: 100%;
-  border-radius: 5px 5px 0 0;
  }
 
  .shown .inside-bx .box-1 .outer-1{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  min-height: fit-content;
+  place-items: center;
+  height: fit-content;
   width: 100%;
  }
 
  .shown .inside-bx .box-1 .outer-1 img{
   object-fit: cover;
   object-position: center;
-  width: 100%;
   transition: all 450ms ease-in-out;
+  width: 100%;
  }
 
  .shown .inside-bx .box-1 .outer-1 img:active{
@@ -604,7 +599,7 @@ span.next:active, span.prev:active{
   top: -40%; left: 50%;
   transform: translateX(-50%);
   border: unset; outline: unset;
-  color: #000814;
+  color: #001219;
   background: aliceblue;
   border-radius: 6px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -673,7 +668,7 @@ span.next:active, span.prev:active{
   position: relative;
   place-items: center;
   overflow: hidden;
-  min-height: fit-content;
+  height: fit-content;
   min-width: 750px;
   width: 100%;
 }
@@ -704,11 +699,10 @@ span.next:active, span.prev:active{
 }
 
 .swiper-slide a{
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  place-items: center flex-start;
+  grid-gap: 10px;
   width: 100%;
 }
 
@@ -730,9 +724,8 @@ span.next:active, span.prev:active{
 }
 
 .swiper-slide span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   color: aliceblue;
   font: 500 1.2rem "Eksell Display Trial", sans-serif;
   writing-mode: sideways-rl;
@@ -816,15 +809,14 @@ span.next:active, span.prev:active{
   opacity: 0;
   visibility: hidden;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding: 0 20px;
   height: fit-content;
   width: 100%;
 }
 
 .swiper-slide .ben:hover .qw{
-  display: flex;
+  display: grid;
   opacity: 1;
   visibility: visible;
   animation: slideLeft 4s ease-in-out 1s both;
@@ -842,8 +834,8 @@ span.next:active, span.prev:active{
   position: relative;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
   overflow: hidden;
   height: 450px;
   width: 100%;
@@ -900,15 +892,14 @@ span.next:active, span.prev:active{
   opacity: 0;
   visibility: hidden;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   padding: 0 15px;
   height: fit-content;
   width: 100%;
 }
 
 .swiper-slide .ben:hover .jsf{
-  display: flex;
+  display: grid;
   opacity: 1;
   visibility: visible;
   animation: slideRight 4s ease-in-out 1s both;
@@ -1765,6 +1756,7 @@ h1#head {
   font-weight: 600;
   width: max-content;
 }
+
 .card__link::after {
   position: absolute;
   top: 27px;
@@ -1776,9 +1768,11 @@ h1#head {
   background: rgba(255, 255, 255, 0.6);
   transition: all 0.5s;
 }
+
 .card__link:hover::after {
   width: 100%;
 }
+
 .card__link svg{
   height: 20px;
   width: 20px;
