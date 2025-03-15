@@ -496,6 +496,41 @@ nav a button:active{
     width: 100%;
   }
 
+  .net .not::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-image: fill 0 linear-gradient(#0000, #0009);
+  }
+
+  .not .tagline{
+    display: grid;
+    position: relative;
+    place-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .tagline h1 {
+    font: 700 clamp(2.1rem, 3vw, 1.5rem) "Eksell Display Trial", sans-serif;
+    letter-spacing: 2px;
+    animation: going 3s ease-in-out infinite alternate;
+    color: aliceblue;
+    display: inline-block;
+}
+
+@keyframes going {
+    from {
+        transform: translateX(-100px) scale(.9);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(60px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+
 .container{
   display: grid;
   position: relative;
@@ -964,18 +999,6 @@ footer{
   scale: .9;
  }
 
-
-  @media screen and (min-width: 1500px) {
-
-    .net .not{
-      width: 65%;
-    }
-
-    .not .umm, .not .omm{
-      min-width: 648px;
-     }
-
-  }
 
   @media screen and (max-width: 1330px) {
 
